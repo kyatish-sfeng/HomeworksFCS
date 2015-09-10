@@ -22,6 +22,7 @@ namespace HW2
              * from 1 to lenght of string
              * substring of i-1 = a and remaining =b
              * concatinate b and a
+             * Dummy edit
              * verify that ba contains second input           
              */
             for (int i = 1; i <= lenghtOfString; i++)
