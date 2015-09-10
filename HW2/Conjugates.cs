@@ -22,6 +22,13 @@ namespace HW2
              * concatinate b and a
              * verify that ba contains second input
              */
+            for (int i = 1; i <= lenghtOfString; i++)
+            {
+                string u = firstInput.Substring(0, i);  //sub string of first
+                string v = firstInput.Substring(i, lenghtOfString); //substring of second
+
+                string vu = v + u;//String concatenation
+            }
 
             return false;
         }
