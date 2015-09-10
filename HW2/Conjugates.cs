@@ -16,7 +16,12 @@ namespace HW2
             char[] secondArray = secondInput.ToCharArray();
 
             //pseudo code
-
+            /*
+             * from 1 to lenght of string
+             * substring of i-1 = a and remaining =b
+             * concatinate b and a
+             * verify that ba contains second input
+             */
 
             return false;
         }
