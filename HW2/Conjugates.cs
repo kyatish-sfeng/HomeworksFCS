@@ -23,6 +23,7 @@ namespace HW2
              * substring of i-1 = a and remaining =b
              * concatinate b and a
              * verify that ba contains second input
+             *hello, world!
              */
             for (int i = 1; i <= lenghtOfString; i++)
             {
