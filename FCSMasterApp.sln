@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FCSMasterApp", "FCSMasterApp\FCSMasterApp.csproj", "{217B4F3E-BE90-40C0-A1E0-218EBCD5389C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW1", "HW1\HW1.csproj", "{687616AB-FF69-4BE1-A1CD-EF630AD7F300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW2", "HW2\HW2.csproj", "{5120F7C7-4689-4FCE-9D63-B69F8A8F3F44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{217B4F3E-BE90-40C0-A1E0-218EBCD5389C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217B4F3E-BE90-40C0-A1E0-218EBCD5389C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217B4F3E-BE90-40C0-A1E0-218EBCD5389C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217B4F3E-BE90-40C0-A1E0-218EBCD5389C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{687616AB-FF69-4BE1-A1CD-EF630AD7F300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{687616AB-FF69-4BE1-A1CD-EF630AD7F300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{687616AB-FF69-4BE1-A1CD-EF630AD7F300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{687616AB-FF69-4BE1-A1CD-EF630AD7F300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5120F7C7-4689-4FCE-9D63-B69F8A8F3F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5120F7C7-4689-4FCE-9D63-B69F8A8F3F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5120F7C7-4689-4FCE-9D63-B69F8A8F3F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5120F7C7-4689-4FCE-9D63-B69F8A8F3F44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
