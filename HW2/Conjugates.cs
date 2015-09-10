@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,6 +11,7 @@ namespace HW2
     {
         public bool IsConjugate(string firstInput, string secondInput)
         {
+            bool returnValue = false;
             int lenghtOfString = firstInput.Length;
 
             char[] firstArray = firstInput.ToCharArray();
@@ -28,9 +30,21 @@ namespace HW2
                 string v = firstInput.Substring(i, lenghtOfString); //substring of second
 
                 string vu = v + u;//String concatenation
+
+                if (vu.Contains(secondInput))
+                {
+                    returnValue = true;
+                }
+                else
+                {
+                    for (int j = 0; j < lenghtOfString; j++)
+                    {
+                        
+                    }
+                }
             }
 
-            return false;
+            return returnValue;
         }
     }
 }
