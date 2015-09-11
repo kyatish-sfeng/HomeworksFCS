@@ -1,4 +1,5 @@
 ﻿using HW1;
+using HW2;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace FCSMasterApp
     {
         static void Main(string[] args)
         {
-            CallHW1();
+            CallHW2();
         }
 
         static void CallHW1()
@@ -32,8 +33,18 @@ namespace FCSMasterApp
             string secondInput = Console.ReadLine();
 
             //Proceed if length of both the strings is equal
+            bool returnValue = (new Conjugates()).IsConjugate(firstInput, secondInput);
+
+            if (returnValue)
+            {
+                Console.WriteLine("{0} and {1} are conjugates", firstInput, secondInput);
+            }
+            else
+            {
+                Console.WriteLine("{0} and {1} are not conjugates", firstInput, secondInput);
+            }
+
+            Console.ReadLine();
         }
-
-
     }
 }

@@ -52,6 +52,10 @@
       <Project>{687616ab-ff69-4be1-a1cd-ef630ad7f300}</Project>
       <Name>HW1</Name>
     </ProjectReference>
+    <ProjectReference Include="..\HW2\HW2.csproj">
+      <Project>{5120f7c7-4689-4fce-9d63-b69f8a8f3f44}</Project>
+      <Name>HW2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
