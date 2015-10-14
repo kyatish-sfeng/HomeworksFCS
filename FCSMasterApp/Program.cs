@@ -1,5 +1,6 @@
 ﻿using HW1;
 using HW2;
+using HW3;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace FCSMasterApp
     {
         static void Main(string[] args)
         {
-            CallHW2();
+            CallHW3_2();
         }
 
         static void CallHW1()
@@ -42,6 +43,46 @@ namespace FCSMasterApp
             else
             {
                 Console.WriteLine("{0} and {1} are not conjugates", firstInput, secondInput);
+            }
+
+            Console.ReadLine();
+        }
+
+        static void CallHW3_2()
+        {
+            Console.WriteLine("Enter Partial Word");
+            string pWord = Console.ReadLine();
+            Console.WriteLine("Enter First Periodicity");
+            string firstPeriodicity = Console.ReadLine();
+            Console.WriteLine("Enter Second Periodicity");
+            string secondPeriodicity = Console.ReadLine();
+
+            var instance = new MinimumWeakPeriodDiagram();
+
+            instance.ConstructPWordWithWkPeroid(pWord, Convert.ToInt16(firstPeriodicity));
+
+            for (int i = 0; i < instance.PWordPresentation.Length; i++)
+            {
+                char[] innerArray = instance.PWordPresentation[i];
+                for (int a = 0; a < innerArray.Length; a++)
+                {
+                    Console.Write(innerArray[a] + " ");
+                }
+                Console.WriteLine();
+            }
+
+            var instance2 = new MinimumWeakPeriodDiagram();
+
+            instance2.ConstructPWordWithWkPeroid(pWord, Convert.ToInt16(secondPeriodicity));
+
+            for (int i = 0; i < instance2.PWordPresentation.Length; i++)
+            {
+                char[] innerArray = instance2.PWordPresentation[i];
+                for (int a = 0; a < innerArray.Length; a++)
+                {
+                    Console.Write(innerArray[a] + " ");
+                }
+                Console.WriteLine();
             }
 
             Console.ReadLine();
