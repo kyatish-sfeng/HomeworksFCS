@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HW4;
 
 namespace FCSMasterApp
 {
@@ -11,7 +12,7 @@ namespace FCSMasterApp
     {
         static void Main(string[] args)
         {
-            CallHW1();
+            CallHW4();
         }
 
         static void CallHW1()
@@ -32,6 +33,13 @@ namespace FCSMasterApp
             string secondInput = Console.ReadLine();
 
             //Proceed if length of both the strings is equal
+        }
+
+        static void CallHW4()
+        {
+            Console.WriteLine("Input");
+            string charInput = Console.ReadLine();
+            new Ordering().Order(charInput);
         }
 
 
