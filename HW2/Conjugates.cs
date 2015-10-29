@@ -28,19 +28,35 @@ namespace HW2
             for (int i = 1; i <= lenghtOfString; i++)
             {
                 string u = firstInput.Substring(0, i);  //sub string of first
-                string v = firstInput.Substring(i, lenghtOfString); //substring of second
+                string v = firstInput.Substring(i, (lenghtOfString-i)); //substring of second
 
                 string vu = v + u;//String concatenation
 
                 if (vu.Contains(secondInput))
                 {
                     returnValue = true;
+                    break;
                 }
                 else
                 {
+                    bool pWordEqual = true;
                     for (int j = 0; j < lenghtOfString; j++)
                     {
-                        
+                        if (vu[j] == secondInput[j] || vu[j] == '^' || secondInput[j] == '^')
+                        {
+
+                        }
+                        else
+                        {
+                            pWordEqual = false;
+                            break;
+                        }
+                    }
+
+                    if (pWordEqual)
+                    {
+                        returnValue = true;
+                        break;
                     }
                 }
             }

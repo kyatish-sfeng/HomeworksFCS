@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{217B4F3E-BE90-40C0-A1E0-218EBCD5389C}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{40407085-C879-42B6-BA96-81BB4C4A7656}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FCSMasterApp</RootNamespace>
-    <AssemblyName>FCSMasterApp</AssemblyName>
+    <RootNamespace>HW3</RootNamespace>
+    <AssemblyName>HW3</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,29 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="MinimumWeakPeriodDiagram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HW1\HW1.csproj">
-      <Project>{687616ab-ff69-4be1-a1cd-ef630ad7f300}</Project>
-      <Name>HW1</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HW2\HW2.csproj">
-      <Project>{5120f7c7-4689-4fce-9d63-b69f8a8f3f44}</Project>
-      <Name>HW2</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HW3\HW3.csproj">
-      <Project>{40407085-c879-42b6-ba96-81bb4c4a7656}</Project>
-      <Name>HW3</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HW4\HW4.csproj">
-      <Project>{5cdd6a25-7302-4471-8b0e-0733296a0f9d}</Project>
-      <Name>HW4</Name>
-    </ProjectReference>
+    <Compile Include="WordConstruct.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
